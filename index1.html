@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Til Sertifikatlarsiz KOREA VIZA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* oq fon */
+      color: #333;
+    }
+    /* Header va menyu */
+    header {
+      background-color: #5ce6d1; /* tugma rangi bilan bir xil */
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    nav {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    nav a, .contact-btn {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: transparent;
+      transition: background-color 0.3s;
+      border: 2px solid transparent;
+    }
+    nav a:hover, .contact-btn:hover {
+      background-color: rgba(255 255 255 / 0.2);
+    }
+
+    /* Bog‘lanish tugmalari */
+    .contact-buttons {
+      margin-top: 10px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .contact-buttons a {
+      background-color: #5ce6d1;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background-color 0.3s;
+      border: 2px solid transparent;
+    }
+    .contact-buttons a:hover {
+      background-color: #4abfb8;
+    }
+
+    /* Forma */
+    .container {
+      max-width: 450px;
+      margin: 30px auto 50px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      resize: vertical;
+    }
+    input[type="date"] {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    button.submit-btn {
+      width: 100%;
+      background-color: #5ce6d1;
+      border: none;
+      color: white;
+      font-size: 16px;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    button.submit-btn:hover {
+      background-color: #4abfb8;
+    }
+
+    /* Tashakkur yozuvi */
+    #thankyou-message {
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+    }
+
+    /* Pastki footer */
+    footer {
+      background-color: #5ce6d1;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+      font-weight: bold;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Til Sertifikatlarsiz KOREA VIZA</h1>
+  <nav>
+    <a href="#news">Yangiliklar</a>
+    <a href="#about">Biz haqimizda</a>
+    <a href="#contact-section">Bog'lanish</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Yangiliklar -->
+  <section id="news" style="max-width:800px; margin: 30px auto; padding: 0 15px;">
+    <h2>Yangiliklar</h2>
+    <p>Bizning agentlik Koreya ishchi vizasi bo‘yicha yangi imkoniyatlarni taqdim etmoqda. Tez orada ko‘proq ma’lumotlar e’lon qilinadi.</p>
+  </section>
+
+  <!-- Biz haqimizda -->
+  <section id="about" style="max-width:800px; margin: 30px auto; padding: 0 15px;">
+    <h2>Biz haqimizda</h2>
+    <p>Koreyaga ishchi vizasi agentligi sifatida biz mijozlarimizga to‘liq qo‘llab-quvvatlash va ishonchli xizmat ko‘rsatamiz.</p>
+  </section>
+
+  <!-- Bog‘lanish va forma -->
+  <section id="contact-section" class="container">
+    <form id="contact-form">
+      <label for="ism">Ism <span style="color:red">*</span></label>
+      <input type="text" id="ism" name="ism" required />
+
+      <label for="telefon">Telefon raqam <span style="color:red">*</span></label>
+      <input type="tel" id="telefon" name="telefon" placeholder="+998xxxxxxxxx" required />
+
+      <label for="tugilgan_sana">Tug‘ilgan sana <span style="color:red">*</span></label>
+      <input type="date" id="tugilgan_sana" name="tugilgan_sana" required />
+
+      <label for="qoshimcha">Qo‘shimcha <span style="color:red">*</span></label>
+      <textarea id="qoshimcha" name="qoshimcha" rows="3" required></textarea>
+
+      <label for="til_certifikat">Til sertifikati (agar bo‘lsa)</label>
+      <input type="text" id="til_certifikat" name="til_certifikat" placeholder="Ixtiyoriy" />
+
+      <button type="submit" class="submit-btn">Ma’lumotlarni yuborish</button>
+    </form>
+
+    <div id="thankyou-message">Tashakkur! Ma’lumotlaringiz qabul qilindi.</div>
+
+    <div class="contact-buttons" style="margin-top: 30px;">
+      <a href="https://t.me/NextWay_Agency1" target="_blank" rel="noopener noreferrer">Telegram @NextWay_Agency1</a>
+      <a href="tel:+998501558800">Telefon +998501558800</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Koreya Ishchi Vizasi Agentligi
+</footer>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const thankyou = document.getElementById('thankyou-message');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Majburiy maydonlarni tekshirish avtomatik, chunki "required" qo‘yilgan
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    // Ma’lumotlarni olish
+    const ism = form.ism.value.trim();
+    const telefon = form.telefon.value.trim();
+    const tugilgan_sana = form.tugilgan_sana.value;
+    const qoshimcha = form.qoshimcha.value.trim();
+    const til_certifikat = form.til_certifikat.value.trim();
+
+    // Emailga yuborish uchun mailto link yaratamiz (to'liq avtomatik emas, lekin ko'pchilik uchun ishlaydi)
+   
